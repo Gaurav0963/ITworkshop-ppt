@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Workshop: Computer Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide-content {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* For the progress bar */
+        .progress-bar-fill {
+            transition: width 0.3s ease-in-out;
+        }
+        .slide-img {
+            @apply rounded-lg shadow-lg object-cover w-full h-full;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl mx-auto">
+        <!-- Presentation Container -->
+        <div id="presentation-container" class="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden border border-gray-700">
+            <div class="p-8 sm:p-12 min-h-[60vh] flex flex-col justify-center">
+
+                <!-- Slide 1: Title -->
+                <div class="slide slide-content">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h1 class="text-4xl sm:text-5xl font-bold text-cyan-400 mb-4">Introduction to Computer Hardware</h1>
+                            <h2 class="text-xl sm:text-2xl text-gray-400">IT Workshop: A Deep Dive into Computer Components</h2>
+                            <p class="mt-8 text-lg">An Introductory Guide for 1st Year B.Tech Students</p>
+                        </div>
+                        <img src="http://googleusercontent.com/file_content/2" alt="Inside of a PC" class="slide-img">
+                    </div>
+                </div>
+
+                <!-- Slide 2: What is a Computer? -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">What is a Computer?</h2>
+                    <ul class="space-y-4 text-lg text-gray-300">
+                        <li>An electronic device that processes data.</li>
+                        <li>It takes in raw data (input), processes it, and provides a result (output).</li>
+                        <li>This is all made possible by a combination of <strong class="text-cyan-400">Hardware</strong> and <strong class="text-cyan-400">Software</strong>.</li>
+                        <li><strong>Hardware:</strong> The physical components you can touch.</li>
+                        <li><strong>Software:</strong> The set of instructions that tells the hardware what to do.</li>
+                    </ul>
+                </div>
+
+                <!-- Slide 3: Core Components -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">The Core Components</h2>
+                    <p class="text-lg mb-4">Today, we'll look at the essential hardware components:</p>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-300">
+                        <li>Motherboard</li>
+                        <li>Central Processing Unit (CPU)</li>
+                        <li>Memory (RAM & ROM)</li>
+                        <li>Storage (HDD, SSD, NVMe)</li>
+                        <li>Power Supply Unit (PSU/SMPS)</li>
+                        <li>Input & Output Devices</li>
+                    </ul>
+                </div>
+
+                <!-- Slide 4: The Motherboard -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">The Motherboard - The Backbone</h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <ul class="space-y-4 text-lg text-gray-300">
+                                <li>The main circuit board of the computer.</li>
+                                <li>Everything connects to the motherboard.</li>
+                                <li>It allows all components to communicate.</li>
+                                <li>Think of it as the central nervous system.</li>
+                            </ul>
+                        </div>
+                        <img src="http://googleusercontent.com/file_content/3" alt="Motherboard with labels" class="slide-img">
+                    </div>
+                </div>
+
+                <!-- Slide 5: The CPU -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">The CPU - The Brain</h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                         <img src="https://placehold.co/600x400/1F2937/7DD3FC?text=CPU+Chip" alt="CPU Chip" class="slide-img order-2 md:order-1">
+                        <div class="order-1 md:order-2">
+                            <ul class="space-y-4 text-lg text-gray-300">
+                                <li>The "brain" of the computer.</li>
+                                <li>Performs calculations and executes instructions.</li>
+                                <li>Speed is measured in Gigahertz (GHz).</li>
+                                <li>Modern CPUs have multiple "cores" for multitasking.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Memory (RAM & ROM) -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">Memory - RAM & ROM</h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-4">
+                             <div class="bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-2xl font-semibold mb-3">RAM (Random Access Memory)</h3>
+                                <ul class="space-y-3 text-gray-300">
+                                    <li><strong class="text-cyan-300">Volatile:</strong> data is lost when power is off.</li>
+                                    <li>Used for short-term data storage for running apps.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-2xl font-semibold mb-3">ROM (Read-Only Memory)</h3>
+                                <ul class="space-y-3 text-gray-300">
+                                    <li><strong class="text-cyan-300">Non-volatile:</strong> data persists without power.</li>
+                                    <li>Contains firmware like BIOS/UEFI.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="https://placehold.co/600x400/1F2937/7DD3FC?text=RAM+Sticks" alt="RAM sticks" class="slide-img">
+                    </div>
+                </div>
+                
+                <!-- Slide 7: Storage -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">Storage - Your Digital Library</h2>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-4">
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-2">HDD (Hard Disk Drive)</h3>
+                                <p>Uses spinning magnetic disks. Larger capacities, lower cost.</p>
+                            </div>
+                            <div class="bg-cyan-800/50 p-4 rounded-lg border-2 border-cyan-400">
+                                <h3 class="text-xl font-semibold mb-2 text-cyan-300">SSD (Solid State Drive)</h3>
+                                <p>Uses flash memory. No moving parts. Much faster.</p>
+                            </div>
+                             <div class="bg-gray-700 p-4 rounded-lg">
+                                <h3 class="text-xl font-semibold mb-2">NVMe SSD</h3>
+                                <p>The newest and fastest type of SSD. Connects directly to the motherboard.</p>
+                            </div>
+                        </div>
+                        <img src="https://placehold.co/600x400/1F2937/7DD3FC?text=Storage+Drives" alt="Various storage drives" class="slide-img">
+                    </div>
+                </div>
+
+                <!-- Slide 8: Power Supply Unit -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">PSU / SMPS - The Heart</h2>
+                     <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <ul class="space-y-4 text-lg text-gray-300">
+                                <li><strong>SMPS:</strong> Switched-Mode Power Supply.</li>
+                                <li>Converts AC wall power to DC for components.</li>
+                                <li>Provides necessary voltage and current.</li>
+                                <li>The "heart" that pumps "blood" (power).</li>
+                            </ul>
+                        </div>
+                        <img src="https://placehold.co/600x400/1F2937/7DD3FC?text=Power+Supply+Unit" alt="Power Supply Unit" class="slide-img">
+                    </div>
+                </div>
+
+                <!-- Slide 9: Input & Output Devices -->
+                 <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">Input & Output Devices</h2>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-4">
+                            <div class="bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-2xl font-semibold mb-3">Input Devices</h3>
+                                <p class="mb-3 text-gray-400">How you give instructions to the computer.</p>
+                                <ul class="list-disc list-inside text-gray-300">
+                                    <li>Keyboard, Mouse, Webcam, etc.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-700 p-6 rounded-lg">
+                                <h3 class="text-2xl font-semibold mb-3">Output Devices</h3>
+                                 <p class="mb-3 text-gray-400">How the computer gives you information.</p>
+                                <ul class="list-disc list-inside text-gray-300">
+                                    <li>Monitor, Printer, Speakers, etc.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="http://googleusercontent.com/file_content/1" alt="PC Front and Back Ports" class="slide-img">
+                    </div>
+                </div>
+
+                <!-- Slide 10: How It All Works Together -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">How It All Works Together</h2>
+                     <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <ol class="list-decimal list-inside space-y-2 text-lg text-gray-300">
+                            <li>You provide <strong class="text-cyan-300">Input</strong>.</li>
+                            <li>The <strong class="text-cyan-300">CPU</strong> processes this input.</li>
+                            <li>The CPU uses <strong class="text-cyan-300">RAM</strong> for temporary storage.</li>
+                            <li>Data is moved to/from <strong class="text-cyan-300">Storage</strong>.</li>
+                            <li>The result is shown via an <strong class="text-cyan-300">Output</strong> device.</li>
+                            <li>All powered by the <strong class="text-cyan-300">PSU</strong> & connected by the <strong class="text-cyan-300">Motherboard</strong>.</li>
+                        </ol>
+                        <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=Block+Diagram" alt="Block diagram of a computer" class="slide-img">
+                    </div>
+                </div>
+
+                <!-- Slide 11: Summary -->
+                <div class="slide slide-content hidden">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-6">Summary</h2>
+                    <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-4 text-lg text-gray-300">
+                        <li><strong>Motherboard:</strong> The main connector.</li>
+                        <li><strong>CPU:</strong> The brain that processes everything.</li>
+                        <li><strong>RAM:</strong> Short-term memory for active tasks.</li>
+                        <li><strong>Storage:</strong> Long-term memory for your files.</li>
+                        <li><strong>PSU:</strong> Provides power to all components.</li>
+                        <li><strong>Input/Output Devices:</strong> Your interface.</li>
+                    </ul>
+                </div>
+                
+                <!-- Slide 12: Q&A -->
+                <div class="slide slide-content hidden">
+                    <div class="text-center">
+                        <h2 class="text-5xl font-bold text-cyan-400 mb-6">Questions?</h2>
+                        <p class="text-3xl text-gray-300">Thank You!</p>
+                        <button id="restartBtn" class="mt-8 bg-cyan-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-cyan-600 transition-colors">Restart Presentation</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation and Progress -->
+            <div class="bg-gray-900 p-4 border-t border-gray-700">
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+                    <div id="progress-bar" class="bg-cyan-400 h-2.5 rounded-full progress-bar-fill" style="width: 0%"></div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <button id="prevBtn" class="bg-gray-700 text-white font-bold py-2 px-5 rounded-lg hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+                    <span id="slide-counter" class="text-sm text-gray-400"></span>
+                    <button id="nextBtn" class="bg-cyan-500 text-white font-bold py-2 px-5 rounded-lg hover:bg-cyan-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const restartBtn = document.getElementById('restartBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            const progressBar = document.getElementById('progress-bar');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach((slide, i) => {
+                    slide.classList.add('hidden');
+                });
+
+                // Show the target slide
+                if (slides[index]) {
+                    slides[index].classList.remove('hidden');
+                }
+                
+                updateControls();
+            }
+
+            function updateControls() {
+                // Update slide counter
+                slideCounter.textContent = `Slide ${currentSlide + 1} of ${totalSlides}`;
+
+                // Update progress bar
+                const progressPercentage = ((currentSlide + 1) / totalSlides) * 100;
+                progressBar.style.width = `${progressPercentage}%`;
+                
+                // Update button states
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === totalSlides - 1;
+                
+                if (currentSlide === totalSlides - 1) {
+                    nextBtn.textContent = 'Finish';
+                } else {
+                    nextBtn.textContent = 'Next';
+                }
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            restartBtn.addEventListener('click', () => {
+                currentSlide = 0;
+                showSlide(currentSlide);
+            });
+
+            // Initial load
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
+
